@@ -448,15 +448,7 @@ body {
     font-weight: 500;
     margin-bottom: 70px;
 }
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 35%;
-    top: 30px;
-    left: 33%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-}
+
 
 .port-image
 {
@@ -468,6 +460,19 @@ body {
     margin-bottom: 30px;
 }
 
+.team-card{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.team-card .team-content{
+    padding: 20px;
+}
 
 @media (max-width: 967px) {
     #footer {
@@ -483,11 +488,7 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .cards{
-        position: relative;
-        top: 20px;
-        left: 30px;
-    }
+
     body{
         overflow-x: hidden;
     }
@@ -500,14 +501,52 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .gallery-title:after {
+        content: "";
+        position: absolute;
+        width: 35%;
+        top: 30px;
+        left: 33%;
+        height: 45px;
+        border-bottom: 1px solid #5e5e5e;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-title:after {
+        content: "";
+        position: absolute;
+        width: 35%;
+        top: 30px;
+        left: 33%;
+        height: 45px;
+        border-bottom: 1px solid #5e5e5e;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-title:after {
+        content: "";
+        position: absolute;
+        width: 35%;
+        top: 30px;
+        left: 33%;
+        height: 45px;
+        border-bottom: 1px solid #5e5e5e;
+    }
+}
 
 
 
